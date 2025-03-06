@@ -1,0 +1,86 @@
+.main-mi-archivo {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.breadcrumb {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.mi-archivo-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.mi-archivo-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mi-archivo-container table th, .mi-archivo-container table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.mi-archivo-container table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.mi-archivo-container table td {
+    background-color: #fff;
+    color: #555;
+}
+
+.mi-archivo-container table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+.mi-archivo-container table tr:hover td {
+    background-color: #f1f1f1;
+}
+
+.delete-button {
+    background-color: transparent;
+    color: #d9534f;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-button:hover {
+    color: #c9302c;
+}
+
+.print-button {
+    display: block;
+    margin: 0 auto;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.print-button:hover {
+    background-color: #4cae4c;
+}

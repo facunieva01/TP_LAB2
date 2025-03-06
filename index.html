@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizacion Hoy</title>
+    <link rel="Icon" href="img/mercado-global.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/index.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="Imagen_header">
+            <img src="img/cabecera-header.jpg" alt="Header Image">
+        </div>
+        <div class="logotipo">
+            <img src="img/mercado-global.png" alt="Logo">
+        </div>
+
+        <p>Usted esta aqui: <a href="index.html">Inicio</a> / Página de Inicio</p>
+
+    </header>
+
+    <section id="sections_articulos">
+        <div class="sections_articulos">
+            <nav>
+                <ul>
+                    <li>
+                        <img src="img/hogar.png" alt="Icono">
+                        <a href="#Inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <img src="img/carpeta.png" alt="Icono">
+                        <a href="Miarchivo.html" target="_self">Mi Archivo</a>
+                    </li>
+                    <li>
+                        <img src="img/documento.png" alt="Icono">
+                        <a href="informes.html" target="_self">Informes</a>
+                    </li>
+                    <li>
+                        <img src="./img/perfil.png" alt="Icono">
+                        <a href="Contacto.html" target="_self">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="opinion-rotator">
+                <div class="opinion active">
+                    <img src="img/usario1.jpg" alt="Usuario 1">
+                    <h5>Roger Medina</h5>
+                    <p>"Excelente servicio y atención al cliente. Siempre resuelven mis dudas rápidamente."</p>
+                </div>
+                <div class="opinion">
+                    <img src="img/usario2c.jpg" alt="Usuario 2">
+                    <h5>Carlos Alcaraz</h5>
+                    <p>"Los precios son muy competitivos y siempre actualizados. Recomiendo este servicio."</p>
+                </div>
+                <div class="opinion">
+                    <img src="img/usuario3.jpeg" alt="Usuario 3">
+                    <h5>Facundo Lopez</h5>
+                    <p>"Tienen un buen servicio y las cotizaciones son siempre correctas. Muy satisfecho."</p>
+                </div>
+            </div>
+    </section>
+
+    <main class="main" id="main">
+        <h3>Pizarra de cotizaciones</h3>
+        <p>(Precio de moneda en valor peso argentino)</p>
+        <div class="currency-container">
+            <div>
+            
+            </div>
+            <div class="currency-selector" id="currency-selector">
+                <label for="monetary-selector">Seleccione una moneda:</label>
+                <select name="monetary-selector" id="monetary-selector">
+                    <option value="TODAS LAS MONEDAS" selected>Monedas</option>
+                    <option value="DOLAR OFICIAL">Dolar Oficial</option>
+                    <option value="DOLAR BLUE">Dolar Blue</option>
+                    <option value="DOLAR MEP">Dolar MEP</option>
+                    <option value="DOLAR CCL">Dolar CCL</option>
+                    <option value="DOLAR TARJETA">Dolar Tarjeta</option>
+                    <option value="DOLAR CRIPTO">Dolar Cripto</option>
+                    <option value="EURO">Euro</option>
+                    <option value="REAL BRASILEÑO">Real Brasileño</option>
+                    <option value="PESO CHILENO">Peso Chileno</option>
+                    <option value="PESO URUGUAYO">Peso Uruguayo</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="currency-displayer" id="currency-displayer">
+            <p>Datos actualizados: ??/??/?? ??:??hs</p>
+            <form action="" method="post" id="currency-displayer-form">
+                <div class="currency-board">
+                    <div class="currency-row">
+                        <div class="tipo-moneda">OFICIAL</div>
+                        <div class="precio-compra">PRECIO COMPRA $</div>
+                        <div class="precio-venta">PRECIO VENTA $</div>
+                        <div class="moneda-favorita">⭐</div>
+                    </div>
+                    <div class="currency-row">
+                        <div class="tipo-moneda">BLUE</div>
+                        <div class="precio-compra">PRECIO COMPRA $</div>
+                        <div class="precio-venta">PRECIO VENTA $</div>
+                        <div class="moneda-favorita">⭐</div>
+                    </div>
+                    <div class="currency-row">
+                        <div class="tipo-moneda">TARJETA</div>
+                        <div class="precio-compra">PRECIO COMPRA $</div>
+                        <div class="precio-venta">PRECIO VENTA $</div>
+                        <div class="moneda-favorita">⭐</div>
+                    </div>
+                    <div class="currency-row">
+                        <div class="tipo-moneda">MEP (DOLAR BOLSA)</div>
+                        <div class="precio-compra">PRECIO COMPRA $</div>
+                        <div class="precio-venta">PRECIO VENTA $</div>
+                        <div class="moneda-favorita">⭐</div>
+                    </div>
+                    <div class="currency-row">
+                        <div class="tipo-moneda">CCL (CONTADO CON LIQUI)</div>
+                        <div class="precio-compra">PRECIO COMPRA $</div>
+                        <div class="precio-venta">PRECIO VENTA $</div>
+                        <div class="moneda-favorita">⭐</div>
+                    </div>
+                    <div class="currency-row">
+                        <div class="tipo-moneda">USDT (CRIPTO)</div>
+                        <div class="precio-compra">PRECIO COMPRA $</div>
+                        <div class="precio-venta">PRECIO VENTA $</div>
+                        <div class="moneda-favorita">⭐</div>
+                    </div>
+                    <div class="currency-row">
+                        <div class="tipo-moneda">EURO</div>
+                        <div class="precio-compra">PRECIO COMPRA $</div>
+                        <div class="precio-venta">PRECIO VENTA $</div>
+                        <div class="moneda-favorita">⭐</div>
+                    </div>
+                    <div class="currency-row">
+                        <div class="tipo-moneda">REAL BRASILEÑO</div>
+                        <div class="precio-compra">PRECIO COMPRA $</div>
+                        <div class="precio-venta">PRECIO VENTA $</div>
+                        <div class="moneda-favorita">⭐</div>
+                    </div>
+                    <div class="currency-row">
+                        <div class="tipo-moneda">PESO CHILENO</div>
+                        <div class="precio-compra">PRECIO COMPRA $</div>
+                        <div class="precio-venta">PRECIO VENTA $</div>
+                        <div class="moneda-favorita">⭐</div>
+                    </div>
+                    <div class="currency-row">
+                        <div class="tipo-moneda">PESO URUGUAYO</div>
+                        <div class="precio-compra">PRECIO COMPRA $</div>
+                        <div class="precio-venta">PRECIO VENTA $</div>
+                        <div class="moneda-favorita">⭐</div>
+                    </div>
+                </div>
+            </form>
+        </div>   
+    </main>
+
+    <footer class="footer1" id="footer1">
+        <div class="table-footer">
+            <table>
+                <tr>
+                    <th>Institucional</th>
+                    <th>Accesos</th>
+                    <th>Contacto</th>
+                </tr>
+                <tr>
+                    <td><a href="#Quienes-somos">¿Quiénes Somos?</a></td>
+                    <td><a href="index.html">Inicio</a></td>
+                    <td>Universidad Tecnológica Nacional</td>
+                </tr>
+                <tr>
+                    <td><a href="#Socios">Socios Estratégicos</a></td>
+                    <td><a href="Miarchivo.html">Mi archivo</a></td>
+                    <td>ZEBALLOS 1341 - S2000BQA</td>
+                </tr>
+                <tr>
+                    <td><a href="#Trabaje-con-nosotros">Trabaje con nosotros</a></td>
+                    <td><a href="informes.html">Informes</a></td>
+                    <td>Rosario</td>
+                </tr>
+                <tr>
+                    <td><a href="Ayuda">Ayuda</a></td>
+                    <td><a href="Contacto.html">Contáctenos</a></td>
+                    <td>0341-4481871</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><a href="mailto:contacto@utn.edu.ar">¡Escríbanos!</a></td>
+                </tr>
+            </table>
+            <div class="desarrolladores">
+                Desarrollado por Juan Gonzalez, Facundo Nieva (55555) <br> <!--Incluir numero de legajo en ()-->
+                TUP06 - 2024
+            </div>
+            <div class="info">
+                TUP - Cátedra de Laboratorio de Computación 2 - Año 2024
+            </div>
+        </div>
+    </footer>
+    <script src="js/pages/index.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+</html>

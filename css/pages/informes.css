@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+.header .Imagen_header img {
+    width: 100%;
+    height: auto;
+}
+
+.header .logotipo img {
+    width: 50px;
+    height: auto;
+}
+
+.header p {
+    margin: 10px 0;
+}
+
+.sections_articulos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sections_articulos nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sections_articulos nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.sections_articulos nav ul li img {
+    margin-right: 10px;
+}
+
+.sections_articulos .recomendaciones {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.sections_articulos .recomendaciones img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.sections_articulos .recomendaciones .text {
+    margin-left: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    background-color:  rgb(157, 165, 165);
+    border-radius: 5px;
+    height: 100px;
+    width: 400px;
+}
+.filter-section label{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.selector{
+    width: 70%;
+    padding: 5px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.email-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.report-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.report-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    width: 600px; 
+}
+
+.chart-container canvas {
+    width: 100%;
+    height: auto;
+    background-color: #bebebe;
+    border-radius: 5px;
+}
+
+.table-container {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+}
+
+.table-container table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.table-container table th,
+.table-container table td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+.table-container table th {
+    background-color: #f2f2f2; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caja del modal */
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón de cerrar */
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botones */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background: #28a745;
+    color: white;
+}
+
+button#clear-form {
+    background: #dc3545;
+    color: white;
+}

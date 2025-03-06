@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizacion Hoy</title>
+    <link rel="Icon" href="img/mercado-global.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/informes.css">
+    <!--- <link rel="stylesheet" href="css/modal.css"> -->
+</head>
+<body>
+    <header>
+        <div class="Imagen_header">
+            <img src="img/cabecera-header.jpg" alt="">
+        </div>
+        <div class="logotipo">
+            <img src="img/mercado-global.png" alt="">
+        </div>
+        <p>Usted está aquí: <a href="index.html">Inicio</a> / Informes</p>
+    </header>
+
+    <section id="sections_articulos">
+        <div class="sections_articulos">
+            <nav>
+                <ul>
+                    <li>
+                        <img src="img/hogar.png" alt="Icono">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <img src="img/carpeta.png" alt="Icono">
+                        <a href="Miarchivo.html">Mi Archivo</a>
+                    </li>
+                    <li>
+                        <img src="img/documento.png" alt="Icono">
+                        <a href="#articulo-secciones-Informes">Informes</a>
+                    </li>
+                    <li>
+                        <img src="img/perfil.png" alt="Icono">
+                        <a href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="opinion-rotator">
+                <div class="opinion active">
+                    <img src="img/usario1.jpg" alt="Usuario 1">
+                    <h5>Roger Medina</h5>
+                    <p>"Excelente servicio y atención al cliente. Siempre resuelven mis dudas rápidamente."</p>
+                </div>
+                <div class="opinion">
+                    <img src="img/usario2c.jpg" alt="Usuario 2">
+                    <h5>Carlos Alcaraz</h5>
+                    <p>"Los precios son muy competitivos y siempre actualizados. Recomiendo este servicio."</p>
+                </div>
+                <div class="opinion">
+                    <img src="img/usuario3.jpeg" alt="Usuario 3">
+                    <h5>Facundo Lopez</h5>
+                    <p>"Tienen un buen servicio y las cotizaciones son siempre correctas. Muy satisfecho."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main" id="main">
+    <div class="filter-section">
+        <label for="currency-filter">Seleccione una moneda:</label>
+        <select class="selector" id="currency-filter">
+            <option value="TODAS">TODAS</option>
+            <option value="Dólar Oficial">Dólar Oficial</option>
+            <option value="Dólar Blue">Dólar Blue</option>
+            <option value="Dólar Bolsa (MEP)">Dólar Bolsa (MEP)</option>
+            <option value="Dólar Contado con Liqui (CCL)">Dólar Contado con Liqui (CCL)</option>
+            <option value="Dólar Tarjeta">Dólar Tarjeta</option>
+            <option value="Dólar Mayorista">Dólar Mayorista</option>
+            <option value="Dólar Cripto">Dólar Cripto</option>
+            <option value="Euro">Euro</option>
+            <option value="Real Brasileño">Real Brasileño</option>
+            <option value="Peso Chileno">Peso Chileno</option>
+            <option value="Peso Uruguayo">Peso Uruguayo</option>
+        </select>
+    </div>
+
+    <div class="report-section">
+        
+        <div class="report-content">
+            <div class="chart-container">
+                <h2>Informe</h2>
+                <canvas id="miGrafica" width="600" height="400"></canvas>
+            </div>
+        </div>
+        <div class="email-section">
+            <a href="#" id="share-info">Compartir Información</a>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>MONEDA</th>
+                        <th>FECHA</th>
+                        <th>COMPRA</th>
+                        <th>VENTA</th>
+                        <th>VARIACIÓN</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-informe">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </main>
+
+    <!-- <div id="email-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Datos del Destinatario</h2>
+            <form id="share-form">
+                <label for="recipient-name">Nombre:</label>
+                <input type="text" id="recipient-name" name="recipient-name" required>
+    
+                <label for="recipient-email">Email:</label>
+                <input type="email" id="recipient-email" name="recipient-email" required>
+    
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <div class="form-buttons">
+                    <button type="button" id="clear-form">Limpiar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+    <footer class="footer1" id="footer">
+        <div class="table-footer">
+            <table>
+                <tr>
+                    <th>Institucional</th>
+                    <th>Accesos</th>
+                    <th>Contacto</th>
+                </tr>
+                <tr>
+                    <td><a href="#Quienes-somos">> ¿Quienes Somos?</a></td>
+                    <td><a href="#Inicio">> Inicio</a></td>
+                    <td>Universidad Tecnológica Nacional</td>
+                </tr>
+                <tr>
+                    <td><a href="#socios">> Socios Estratégicos</a></td>
+                    <td><a href="#Miarchivo">> Mi Archivo</a></td>
+                    <td>ZEBALLOS 1341 - S2000BQA</td>
+                </tr>
+                <tr>
+                    <td><a href="#Trabaje-con-nosotros">> Trabaje con Nosotros</a></td>
+                    <td><a href="#Iformes">> Informes</a></td>
+                    <td>Rosario</td>
+                </tr>
+                <tr>
+                    <td><a href="#Ayuda">> Ayuda</a></td>
+                    <td><a href="#Contactenos">> Contactenos</a></td>
+                    <td>0341-4481871</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><a href="mailto:contacto@utn.edu.ar">¡Escríbanos!</a></td>
+                </tr>
+            </table>
+            <div class="desarrolladores">
+                Desarrollado por Juan Gonzalez, Facundo Nieva (5555) <br>
+                TUP06 - 2024
+            </div>
+            <div class="info">
+                TUP - Cátedra de Laboratorio de Computación 2 - Año 2024
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/pages/informes.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
